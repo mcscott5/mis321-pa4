@@ -2,7 +2,13 @@ namespace api.Models
 {
     public class Exercise
     {
-        public string exerciseId {get; set;}
+        public int exerciseId {get; set;}
+
+        public string activityType {get; set;}
+        public double distance {get; set;}
+        public string dateCompleted {get; set;}
+        public bool pinned {get; set;}
+        public bool deleted {get; set;}
         
     }
 }
