@@ -1,0 +1,40 @@
+.buttonLine{
+    display: flex;
+}
+
+
+.navbar-brand {
+    font-family: 'Syne', sans-serif;
+    font-size: 35pt;
+}
+
+.navvy{
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+body{
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+    background-size: cover;
+}
+
+
+.dropdown{
+    margin-right: 20px;
+}
+
+table{
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+
+select {
+    font-family: 'FontAwesome', 'Second Font name'
+  }
+
+#add-exercise-form {
+    display: none;
+}
+
+label {
+    color: whitesmoke;
+}
