@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Data;
 using api.Models;
 
-
     public class DataAccess
     {
         public static List<Exercise> GetExercises()
@@ -27,7 +26,7 @@ using api.Models;
                             exerciseId = reader.GetInt32("exerciseId"),
                             activityType = reader.GetString("activityType"),
                             distance = reader.GetDouble("distance"),
-                            dateCompleted = reader.GetDateTime("dateCompleted"),
+                            dateCompleted = reader.GetDateTime("dateCompleted").ToShortDateString(),
                             pinned = reader.GetBoolean("pinned"),
                             deleted = reader.GetBoolean("deleted")
                         });
