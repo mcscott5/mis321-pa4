@@ -6,7 +6,7 @@ namespace api.Models
 
         public string activityType {get; set;}
         public double distance {get; set;}
-        public string dateCompleted {get; set;}
+        public DateTime dateCompleted {get; set;}
         public bool pinned {get; set;}
         public bool deleted {get; set;}
         
