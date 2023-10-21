@@ -33,8 +33,10 @@ namespace api.Controllers
 
         // POST: api/Exercise
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Exercise value)
         {
+            System.Console.WriteLine(value);
+            DataAccess.AddExercise(value);
         }
 
         // PUT: api/Exercise/5
