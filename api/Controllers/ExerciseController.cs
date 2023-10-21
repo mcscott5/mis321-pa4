@@ -41,14 +41,17 @@ namespace api.Controllers
 
         // PUT: api/Exercise/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id)
         {
+            //System.Console.WriteLine(id);
+            DataAccess.PinExercise(id);
         }
 
         // DELETE: api/Exercise/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            DataAccess.DeleteExercise(id);
         }
     }
 }
