@@ -3,7 +3,6 @@ namespace api.Models
     public class Exercise
     {
         public int exerciseId {get; set;}
-
         public string activityType {get; set;}
         public double distance {get; set;}
         public string dateCompleted {get; set;}
